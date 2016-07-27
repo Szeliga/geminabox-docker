@@ -8,5 +8,5 @@ use Rack::Auth::Basic, "Protected Area" do |username, password|
   username == ENV.fetch('GEMINABOX_USER') && password == ENV.fetch('GEMINABOX_PASS')
 end
 
-Geminabox.data = File.expand_path '../data', __FILE__
+Geminabox.data = '/var/data'
 run Geminabox::Server

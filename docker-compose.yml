@@ -6,5 +6,7 @@ services:
     environment:
       - GEMINABOX_USER=${GEMINABOX_USER}
       - GEMINABOX_PASS=${GEMINABOX_PASS}
+    volumes:
+      - /var/data
     ports:
-     - "9292:9292"
+     - "127.0.0.1:9292:9292"
