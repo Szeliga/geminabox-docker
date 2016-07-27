@@ -6,6 +6,7 @@ services:
     environment:
       - GEMINABOX_USER=${GEMINABOX_USER}
       - GEMINABOX_PASS=${GEMINABOX_PASS}
+      - RUBYGEMS_PROXY=true
     volumes:
       - /var/data
     ports:
