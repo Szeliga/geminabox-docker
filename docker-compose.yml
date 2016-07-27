@@ -1,0 +1,10 @@
+---
+version: '2'
+services:
+  gemserver:
+    build: .
+    environment:
+      - GEMINABOX_USER=${GEMINABOX_USER}
+      - GEMINABOX_PASS=${GEMINABOX_PASS}
+    ports:
+     - "9292:9292"
